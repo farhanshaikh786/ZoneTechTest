@@ -71,15 +71,9 @@ namespace ZoneTest_Project.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Verify Your logo link exist")]
-        [NUnit.Framework.CategoryAttribute("Welsh")]
-        [NUnit.Framework.CategoryAttribute("water")]
-        [NUnit.Framework.CategoryAttribute("Website")]
         public virtual void VerifyYourLogoLinkExist()
         {
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Your logo link exist", null, new string[] {
-                        "Welsh",
-                        "water",
-                        "Website"});
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify Your logo link exist", null, ((string[])(null)));
 #line 6
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
@@ -102,17 +96,49 @@ testRunner.Then("Client returns back to Your logo page", ((string)(null)), ((Tec
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
 #line 14
-testRunner.Given("Client is navigated to Your logo website page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("Client is navigated to Yourlogo Site page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 15
 testRunner.When("Client click on Printed Dress", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line 16
-testRunner.And("Client one more quantity", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 17
 testRunner.And("Client on Add Chart", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
-#line 18
+#line 17
 testRunner.And("Client proceed to checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 18
+testRunner.And("Client to checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 19
-testRunner.Then("Client to checkout", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+testRunner.And("Client entered the \"<Email>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 20
+testRunner.And("Client clicked on login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 21
+testRunner.And("Client click Mr on title", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 22
+testRunner.And("Client enters \"<Firstname>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 23
+testRunner.And("Client could also add \"<Lastname>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 24
+testRunner.And("Client must add \"<EmailAddress>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 25
+testRunner.And("Client needs to \"<Password>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 26
+testRunner.And("Client enters again \"<First name>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 27
+testRunner.And("Client could also add again \"<Last name>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 28
+testRunner.And("Client also \"<Address>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 29
+testRunner.And("the Client \"<City>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 30
+testRunner.And("Client fills in \"<State>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 31
+testRunner.And("Client adds the \"<Zip/Postal Code>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 32
+testRunner.And("Client \"<Country>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 33
+testRunner.And("Client will select \"<Mobile phone>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 34
+testRunner.And("Client remember \"<Assign an address alias for future reference.>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 35
+testRunner.Then("Submit the Full form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }

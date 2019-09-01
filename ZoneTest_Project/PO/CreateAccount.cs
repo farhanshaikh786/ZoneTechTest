@@ -21,6 +21,7 @@ namespace ZoneTest_Project.PO
 
         #region Elements
 
+        [FindsBy(How = How.XPath, Using = "//*[@id='header']/div[2]/div/div/nav/div[1]/a")] private IWebElement Log;
         [FindsBy(How = How.XPath, Using = "//*[@id='email_create']")] private IWebElement emailadd;
         [FindsBy(How = How.XPath, Using = "//*[@id='SubmitCreate']")] private IWebElement create;
 
@@ -55,6 +56,17 @@ namespace ZoneTest_Project.PO
             App_Drivers.Driver.Navigate().GoToUrl(Yourlogo);
         }
 
+        public void Click_on_sign_in()
+        {
+            try
+            {
+                Log.Click();
+            }
+            catch (Exception e)
+            {
+                throw new Exception("No Element found", e);
+            }
+        }
         public void Click_Email_Address(string email)
         {
             try

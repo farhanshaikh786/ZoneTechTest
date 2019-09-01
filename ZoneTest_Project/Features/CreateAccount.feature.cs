@@ -81,10 +81,12 @@ this.ScenarioInitialize(scenarioInfo);
 #line 7
 testRunner.Given("Client is navigated to Yourlogo Site page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 8
-testRunner.And(string.Format("Client entered the \"{0}\"", emailAddress), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("Client is click on Sign In", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 9
-testRunner.And("Client clicked on login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client entered the \"{0}\"", emailAddress), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 10
+testRunner.And("Client clicked on login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 11
 testRunner.Then("Client returns back to Home page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
@@ -96,40 +98,46 @@ testRunner.Then("Client returns back to Home page", ((string)(null)), ((TechTalk
         public virtual void VerifyPersonalInformation(string firstname, string lastname, string email, string password, string firstName, string lastName, string address, string city, string state, string zipPostalCode, string country, string mobilePhone, string assignAnAddressAliasForFutureReference_, string[] exampleTags)
         {
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Verify personal information", null, exampleTags);
-#line 16
+#line 17
 this.ScenarioInitialize(scenarioInfo);
             this.ScenarioStart();
-#line 17
-testRunner.Given("Client is navigated to Yourlogo Site page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 18
-testRunner.Given("Client click Mr on title", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
+testRunner.Given("Client is navigated to Yourlogo Site page", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line 19
-testRunner.And(string.Format("Client enters \"{0}\"", firstname), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("Client is click on Sign In", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 20
-testRunner.And(string.Format("Client could also add \"{0}\"", lastname), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client entered the \"{0}\"", email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 21
-testRunner.And(string.Format("Client must add \"{0}\"", email), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("Client clicked on login button", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 22
-testRunner.And(string.Format("Client needs to \"{0}\"", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("Client click Mr on title", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 23
-testRunner.And(string.Format("Client enters again \"{0}\"", firstName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client enters \"{0}\"", firstname), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 24
-testRunner.And(string.Format("Client could also add again \"{0}\"", lastName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client could also add \"{0}\"", lastname), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 25
-testRunner.And(string.Format("Client also \"{0}\"", address), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And("Client must add \"<EmailAddress>\"", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 26
-testRunner.And(string.Format("the Client \"{0}\"", city), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client needs to \"{0}\"", password), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 27
-testRunner.And(string.Format("Client fills in \"{0}\"", state), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client enters again \"{0}\"", firstName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 28
-testRunner.And(string.Format("Client adds the \"{0}\"", zipPostalCode), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client could also add again \"{0}\"", lastName), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 29
-testRunner.And(string.Format("Client \"{0}\"", country), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client also \"{0}\"", address), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 30
-testRunner.And(string.Format("Client will select \"{0}\"", mobilePhone), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("the Client \"{0}\"", city), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 31
-testRunner.And(string.Format("Client remember \"{0}\"", assignAnAddressAliasForFutureReference_), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+testRunner.And(string.Format("Client fills in \"{0}\"", state), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 32
+testRunner.And(string.Format("Client adds the \"{0}\"", zipPostalCode), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 33
+testRunner.And(string.Format("Client \"{0}\"", country), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 34
+testRunner.And(string.Format("Client will select \"{0}\"", mobilePhone), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 35
+testRunner.And(string.Format("Client remember \"{0}\"", assignAnAddressAliasForFutureReference_), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+#line 36
 testRunner.Then("Submit the Full form", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();

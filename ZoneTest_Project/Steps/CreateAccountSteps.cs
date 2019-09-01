@@ -15,22 +15,33 @@ namespace ZoneTest_Project.Steps
         {
             account.Navgiate_to_YourLogo_page();
         }
-        
+
+        [Given(@"Client is click on Sign In")]
+        public void GivenClientIsClickOnSignIn()
+        {
+            account.Click_on_sign_in();
+        }
+
+
         [Given(@"Client entered the ""(.*)""")]
         public void GivenClientEnteredThe(string p0)
         {
+            Thread.Sleep(TimeSpan.FromSeconds(3));
             account.Click_Email_Address(p0);
         }
-        
+
+
         [Given(@"Client clicked on login button")]
         public void GivenClientClickedOnLoginButton()
         {
+            Thread.Sleep(TimeSpan.FromSeconds(3));
             account.Click_on_create_account();
         }
         
         [Given(@"Client click Mr on title")]
         public void GivenClientClickMrOnTitle()
         {
+            Thread.Sleep(TimeSpan.FromSeconds(5));
             account.Click_on_Gender();
         }
         
@@ -117,6 +128,12 @@ namespace ZoneTest_Project.Steps
         public void ThenSubmitTheFullForm()
         {
             account.Click_on_Register();
+        }
+
+        [Then(@"Client returns back to Home page")]
+        public void ThenClientReturnsBackToHomePage()
+        {
+            account.Navgiate_to_YourLogo_page();
         }
     }
 }
